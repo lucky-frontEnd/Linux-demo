@@ -1,0 +1,185 @@
+/* 登录页面样式设置 */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: rgba(157, 211, 168, 0.5);
+}
+h1{
+	color: #004d61;
+	margin: 25px 0 2px 35px;
+}
+h4 {
+	margin-left: 75px ;
+	color: #aaa;
+}
+.my_img {
+	margin: 10px auto;
+}
+img {
+	display: block;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;	
+	margin: 0 auto;
+}
+.submit_photo {
+	display: block;
+	color: #aaa;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	font-size: 20px;
+	margin: 15px auto;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #ccc,
+				-1px -1px 5px #ccc;
+	text-align: center;
+	background-color: #fff;
+	transition: all .6s ease;
+}
+.submit_photo:hover{
+	box-shadow: 0 0 50px rgba(157, 211, 168, 0.2) inset;
+}
+.my_form {
+	margin:40px 0 0 450px;
+}
+p {
+	color: #8ac6d1;
+	font-size: 20px;
+	margin: 5px;
+}
+.my_form input {				
+	width: 370px;
+	height: 45px;
+	border: 0;
+	outline: 0;
+	line-height: 45px;
+	border-radius: 11px;
+	padding: 16px;
+	font-size: 18px;
+	color: #aaa;
+	box-shadow: 1px 1px #aaa;
+}
+.my_form input:focus {
+	box-shadow: 0 0 8px #8AC6D1 inset;
+}
+#my_btn {
+	width: 200px;
+	margin: 40px 0 10px 550px;
+}
+.myBtn {
+	color: red;
+	width: 60px;
+	height: 50px;
+    outline: none;
+    border: none;
+	font-size: 23px;
+	border-radius: 10px;
+	background-color: white;
+    text-align: center;
+    box-shadow: 1px 1px 3px #aaa;
+}
+.my_login {
+	margin: 20px 540px 0;
+	width: 230px;
+}
+.my_login a {
+	display: block;
+	color: red;
+	width: 230px;
+	height: 50px;
+	line-height: 50px;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 100px;
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: 600;
+	text-align: center;
+	background-color: #fff;
+	transition: all .2s linear;
+	box-shadow: 1px 1px #aaa,
+				1px 1px #aaa,
+				1px 1px #aaa,
+				1px 1px #aaa;
+}
+.my_login>a:active {
+	box-shadow: 0 0 10px rgba(157, 211, 168, 0.6) inset;
+}
+/* 忘记密码 */
+input {
+	width: 220px;
+	height: 32px;
+	border-radius: 8px;
+	margin: 5px 2px;
+	padding: 0 8px;
+	outline: none;
+	border: 0;
+	color: #AAAAAA;
+	transition: 0.6s ease;
+	box-shadow: 1px 1px #aaa,
+				-1px -1px #aaa;
+}
+input:focus {
+	box-shadow: 0 0 5px #8AC6D1 inset;
+}
+.confirm {
+	width: 80px;
+	height: 40px;
+	margin: 30px 0 0 0;
+	right: 100px;
+	outline: none;
+	/* border: 0; */
+	transition: 0.6s ease;
+	border-radius: 5px;
+	background-color: #EBECF0;
+	box-shadow: 1px 1px #aaa;
+}
+.confirm:focus {
+	box-shadow: 0 0 2px #8AC6D1 inset;
+}
+/* 弹窗 (background) */
+.modal {
+	display: none; /* 默认隐藏 */
+	position: fixed; /* 固定定位 */
+	z-index: 1; /* 设置在顶层 */
+	left: 0;
+	top: 0;
+	width: 100%; 
+	height: 100%;
+	overflow: auto; 
+	background-color: rgb(0,0,0); 
+	background-color: rgba(0,0,0,0.4); 
+}
+ 
+/* 弹窗内容 */
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto; 
+	padding: 20px;
+	border: 1px solid #888;
+	width: 35%; 
+	height: 250px;
+	box-shadow:  0 0 2px #aaa;
+}
+ 
+/* 关闭按钮 */
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}

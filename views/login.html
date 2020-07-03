@@ -1,0 +1,133 @@
+<!-- 登录界面 --><!DOCTYPE html>
+<html>
+	<head>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" 
+		href="../lib/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+		<link href="../css/login.css" rel="stylesheet" />
+	</head>
+	<body>
+        <!-- 图片设置 -->
+		<div class="my_img">
+			<img src="../images/left_lunbo5.png" />
+			<a href="#" class="submit_photo">
+				<i class="fa fa-camera">&nbsp;&nbsp;Photo</i>
+			</a>
+		</div>
+		<div class="my_form">
+			<!-- 表单 -->
+			<form id="myForm">				
+				<p>Username</p>
+				<input type="text" name="username" placeholder="Enter your name..." 
+				 onblur="checkUsername();" /><br />
+				<p>Password</p>
+				<input type="password" name="password" placeholder="Enter your password..." 
+				onblur="checkPassword();"/>
+			</form>
+		</div>	
+		<!-- 音乐/帮助弹窗按钮 -->
+		<div id="my_btn">
+			<button class="myBtn"><i class="fa fa-music" onclick="modalDesign();">
+			</i></button>
+			<button class="myBtn" id="modal_help" onclick="modalHelp();">
+				<i class="fa fa-question"></i></button>
+			<button class="myBtn" onclick="new_help();"><i class="fa fa-trash-o">
+			</i></button>
+		</div>		
+		<!-- 音乐弹窗 -->
+		<div id="myModalDesign" class="modal">		 
+		  <!-- 弹窗内容 -->		  
+		 <div class="modal-content">
+			<span class="close" onclick="designClose();">&times;</span>		 	
+			<p><i class="fa fa-music" style="font-size:24px"></i>&nbsp;音乐</p>
+			<audio src="Music/你笑起来真好看%20.mp3" controls="controls"></audio>
+		 </div>
+		</div>
+		<!-- 帮助弹窗 -->
+		<div id="myModalHelp" class="modal">		 
+		  <!-- 弹窗内容 -->		  
+		 <div class="modal-content">
+			<span class="close" onclick="helpClose();">&times;</span>
+		 	<p><i class="fa fa-address-book-o" style="font-size:24px">
+			</i>&nbsp;姓名: 请输入正确的用户名</p>
+		 	<p><i class="fa fa-file-powerpoint-o" style="font-size:24px">
+			</i>&nbsp;密码: 请输入正确的密码</p>
+		 </div>
+		</div>		
+		<!-- 登录按钮 -->
+		<div class="my_login">
+		<a href="home.html">
+			Login&nbsp;
+			<i class="fa fa-unlock-alt" style="font-size: 22px; color: red;">
+		</i></a>
+		</div>	
+		<!-- 忘记密码 -->
+		<div style="margin-left: 700px;">
+			<a href="#" onclick="forgetPassword();">忘记密码</a>
+		</div>
+		<div class="modal" id="my_password">
+			<div class="modal-content">
+				<span class="close" onclick="passwordClose();">&times;</span>
+				<table id="tb">
+					<tr>
+						<td><i class="fa fa-phone"></i>手机号:</td>
+						<td>
+							<input type="text" name="phone" placeholder="请输入手机号码" class="my_input"/>
+						</td>
+					</tr>
+					<tr>
+						<td>&nbsp;&nbsp;验证码:</td>
+						<td>
+							<input type="text" name="yangzm" placeholder="请输入验证码" class="my_input"/>
+						</td>
+					</tr>
+					<tr>
+						<td><button value="确认" class="confirm">确认</button></td>
+						<td><button value="确认" class="confirm">重置</button></td>
+					</tr>
+				</table>
+			</div>
+        </div>
+        
+		<!-- 第三方登录方式按钮 -->
+		<div style="text-align: center; margin: 20px;">
+			<button onclick="weChat();" >
+				<i class="fa fa-wechat" style="font-size:24px; color: #62b743;">
+			</i></button>&nbsp;&nbsp;
+			<button onclick="weiBo();" >
+				<i class="fa fa-weibo" style="font-size:24px; color: #aa2a19">
+			</i></button>&nbsp;&nbsp;
+			<button onclick="qQ();" >
+				<i class="fa fa-qq" style="font-size:24px; color: #c7341a;">
+			</i></button>
+		</div>
+		<!-- 微信弹窗 -->
+		<div class="modal" id="wechat">
+			<div class="modal-content">
+				<span class="close" onclick="wechatClose();">&times;</span>
+				<img src="../images/wechat.jpg" width="300px" height="300px"/>
+				<p style="text-align: center;">请使用手机微信扫一扫</p>
+			</div>
+		</div>
+		<!-- 微博弹窗 -->
+		<div class="modal" id="weibo">
+			<div class="modal-content">
+				<span class="close" onclick="weiboClose();">&times;</span>
+				<img src="../images/wechat.jpg" width="300px" height="300px"/>
+				<p style="text-align: center;">请使用手机微博扫一扫</p>
+			</div>
+		</div>
+		<!-- QQ弹窗 -->
+		<div class="modal" id="qq">
+			<div class="modal-content">
+				<span class="close" onclick="qqClose();">&times;</span>
+				<img src="../images/qq.jpg" width="300px" height="300px"/>
+				<p style="text-align: center;">请使用手机QQ扫一扫</p>
+			</div>
+        </div>
+        
+		<script src="../js/login.js"></script>
+	</body>
+</html>

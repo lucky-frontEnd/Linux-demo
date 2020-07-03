@@ -1,0 +1,132 @@
+/* 流程管理页面样式设置 */
+
+/* 中间内容标题样式设置 开始 */
+.content_title span {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 26px 0px 0px 35px;
+    color: #b8a784;
+}
+.content_title .start {
+    display: inline-block;
+    margin-left: 591px;
+}
+/* 中间内容标题样式设置 结束 */
+
+.right_content {
+    width: 981px;
+    height: 504px;
+    float: left;
+    margin-left: 35px;
+    background-color: #f5f3f4;
+}
+
+/* 中间内容样式设置 开始 */
+.content {
+    float: left;
+    width: 745px;
+    height: 100%;
+    margin-left: 2px;
+    background-color: #f5f3f4;
+}
+
+/* 中间内容顶部样式设置 开始 */
+.content_top {
+    width: 100%;
+    height: 220px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #c9c9c9,
+                -1px -1px 5px #c9c9c9;
+}
+.content_top table {
+    text-align: center;
+    color: #918d8d;
+    height: 187px;
+    width: 100%;
+}
+/* 中间内容顶部样式设置 结束 */
+
+/* 分页样式设置  开始 */
+.paging {
+    list-style: none;
+    height: 20px;
+    margin-top: 4px;
+    margin-left: 298px;
+}
+.paging li {
+    float: left;
+    margin: 0 3px;
+}
+.paging li>a {
+    text-decoration: none;
+    color: #747474;
+}
+/* 分页样式设置  结束 */
+
+/* 中间内容底部样式设置 开始 */
+/* 底部标题样式设置 */
+.bottom_title {
+    width: 500px;
+    height: 20px;
+    margin-left: 1px;
+    margin-top: 20px;
+    color: #b8a784;
+}
+.content_bottom {
+    height: 245px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #c9c9c9,
+                -1px -1px 5px #c9c9c9;
+}
+.content_bottom table {
+    text-align: center;
+    color: #918d8d;
+    height: 187px;
+    width: 100%;
+}
+/* 中间内容底部样式设置 结束 */
+/* 中间内容样式设置 结束 */
+
+/* 右侧导览航样式设置 开始 */
+.right {
+    float: right;
+    width: 198px;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #c9c9c9,
+                -1px -1px 5px #c9c9c9;
+}
+.right .right_nav {
+    width: 80px;
+    height: 50px;
+    margin: 33px auto;
+    color: #54abee;
+}
+.right_nav span {
+    display: inline-block;
+    width: 100%;
+    line-height: 23px;
+    text-align: center;
+    font-size: 16px;    
+}
+.right_nav a {
+    text-decoration: none;
+}
+/* 右侧导览航样式设置 结束 */
+
+/* 中间内容点击样式 */
+/* 主题 */
+.table_current {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #278dda;
+    border-radius: 3px;
+}

@@ -1,0 +1,218 @@
+<!-- 流程管理页面 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>流程管理</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/process.css">
+    <link rel="stylesheet" href="../lib/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../lib/jQuery.js"></script>
+</head>
+
+<body>
+    <div class="containter">
+        <!-- 左侧导览航 开始 -->
+        <div class="containter_left">
+            <div class="left_title">
+                Linux实训
+            </div>
+            <div class="logo">
+                <img src="../images/logo.png">
+
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="../index.html">
+                        <i class="fa fa-home fa-fw"></i>
+                        <p>首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-cog fa-fw"></i>
+                        <p>流程管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./data.html">
+                        <i class="fa fa-paperclip"></i>
+                        <p>资料管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./manuscripts.html">
+                        <i class="fa fa-edit"></i>
+                        <p>公文管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./organization.html">
+                        <i class="fa fa-user"></i>
+                        <p>组织管理</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 左侧导览航 结束 -->
+
+        <!-- 顶部导览航 开始 -->
+        <div class="top_nav">
+            <p>社团管理系统<span>计算机181</span></p>
+            <div class="register">
+                <i class="fa fa-user-o"></i>
+                <i class="fa fa-cloud-download"></i>
+                <span class="register_pic">
+                    <img src="../images/left_lunbo1.png" alt="">
+                </span> 
+                <!-- 图片弹窗-->
+                <div id="picPopup" class="model">
+                    <div class="model-content">
+                        <!-- 弹窗内容 -->
+                        <span class="close">&times;</span>
+                        <img src="../images/left_lunbo1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 顶部导览航 结束 -->
+
+        <!-- 中间内容标题 -->
+        <div class="content_title">
+            <span>待处理事物&nbsp;handing&nbsp;affair</span>
+            <span class="start">发起事务&nbsp;starting</span>
+        </div>
+        <div class="right_content"> 
+            <!-- 中间内容  -->
+            <div class="content">
+                <!-- 顶部内容 开始-->
+                <div class="content_top">
+                    <table id="contentClick">
+                        <tr>
+                            <th>主题</th>
+                            <th>类型</th>
+                            <th>开始时间</th>
+                            <th>审核人</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr class="t_clicks">                            
+                            <td>校运会物资申请单</td>
+                            <td>申请单</td>
+                            <td id="timer"></td>
+                            <td>卫庄</td>
+                            <td>同意</td>
+                            <td>关闭</td>
+                        </tr>
+                        <tr class="t_clicks">
+                            <td>校运会策划方案书</td>
+                            <td>方案</td>
+                            <td id="timer"></td>
+                            <td>李四</td>
+                            <td>审核中</td>
+                            <td>撤销</td>
+                        </tr>
+                        <tr class="t_clicks">
+                            <td>密码修改申请</td>
+                            <td>申请单</td>
+                            <td id="timer"></td>
+                            <td>王五</td>
+                            <td>同意</td>
+                            <td>关闭</td>
+                        </tr>
+                        <tr class="t_clicks">
+                            <td>班级会申请表</td>
+                            <td>申请单</td>
+                            <td id="timer"></td>
+                            <td>张三</td>
+                            <td>不同意</td>
+                            <td>关闭</td>
+                        </tr>
+                    </table>
+                    <!-- 分页 -->
+                    <ul class="paging">
+                        <li><a href="#">上一页</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">下一页</a></li>
+                    </ul>
+                </div>
+                <!-- 顶部内容 结束-->
+
+                <div class="bottom_title">
+                    <span>待处理事物&nbsp;handing&nbsp;affair</span>
+                </div>
+                <!-- 底部内容 开始 -->
+                <div class="content_bottom">
+                    <table cellspacing="18">
+                        <tr>
+                            <th>主题</th>
+                            <th>类型</th>
+                            <th>开始时间</th>
+                            <th>审核人</th>
+                            <th colspan="2">操作</th>
+                        </tr>
+                        <tr class="d_clicks">                            
+                            <td>校运会物资申请单</td>
+                            <td>申请单</td>
+                            <td id="timer"></td>
+                            <td>卫庄</td>
+                            <td>同意</td>
+                            <td>不同意</td>
+                        </tr>
+                        <tr class="d_clicks">
+                            <td>校运会策划方案书</td>
+                            <td>方案</td>
+                            <td id="timer"></td>
+                            <td>李四</td>
+                            <td>同意</td>
+                            <td>不同意</td>
+                        </tr>
+                        <tr class="d_clicks">
+                            <td>密码修改申请</td>
+                            <td>申请单</td>
+                            <td id="timer"></td>
+                            <td>王五</td>
+                            <td>同意</td>
+                            <td>不同意</td>
+                        </tr>
+                        <tr class="d_clicks">
+                            <td>班级会申请表</td>
+                            <td>申请单</td>
+                            <td id="timer"></td>
+                            <td>张三</td>
+                            <td>同意</td>
+                            <td>不同意</td>
+                        </tr>
+                    </table>
+                    <ul class="paging">
+                        <li><a href="#">上一页</a></li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">下一页</a></li>
+                    </ul>
+                </div>
+                <!-- 底部内容 结束 -->
+            </div>
+            <!-- 中间内容  结束-->
+
+            <!-- 右侧导航栏 -->
+            <div class="right">
+                <div class="right_nav">
+                    <span><a href="./apply.html">申请书</a></span>
+                    <span><a href="./programme.html">方案书</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/tableClick.js"></script>
+    <script src="../js/time.js"></script>
+    <script src="../js/registerPic.js"></script>
+</body>
+
+</html>

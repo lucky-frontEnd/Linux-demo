@@ -1,0 +1,77 @@
+/* 方案书界面样式设置 */
+/* 中间内容标题样式设置 开始 */
+.content_title span {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin: 26px 0px 0px 35px;
+    color: #b8a784;
+}
+.content_title .start {
+    display: inline-block;
+    margin-left: 591px;
+}
+/* 中间内容标题样式设置 结束 */
+
+/* 中间内容 */
+.content {
+    float: left;
+    width: 966px;
+    height: 504px;
+    margin-left: 35px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 5px #c9c9c9,
+                -1px -1px 5px #c9c9c9;
+}
+
+/* 表单样式设置 */
+.content_main {
+    width: 424px;
+    height: 317px;
+    margin: 44px auto 0px; 
+}
+.content_main input {
+    width: 162px;
+    height: 20px;
+    margin: 6px 0;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid #c9c9c9;
+}
+.content_main #notice_title {
+    width: 345px;
+    margin-top: 0px;
+}
+.content_main input:focus {
+    border: 1px solid #278dda;
+}
+.content_main #public_content {
+    width: 345px;
+    height: 200px;
+    border-radius: 2px;
+}
+.content_main #idea {
+    width: 162px;
+    height: 20px;
+    line-height: 20px;
+    border: none;
+    border: 1px solid #c9c9c9;
+    border-radius: 2px;
+}
+.content_main button {
+    width: 181px;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    border: 1px solid #278dda;
+    border-radius: 3px;
+    background: #278dda;
+    box-shadow: 1px 1px #cccccc;
+    margin: 18px 0px 0px 126px;
+}

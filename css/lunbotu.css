@@ -1,0 +1,92 @@
+/* 轮播图样式设置 */
+/*设置轮播图的边框相对定位*/
+.play-box {
+    position: relative;
+    width: 442px;
+    height: 169px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+}
+
+/*设置边框下的图片*/
+.play-box img {
+    width: 442px;
+    height: 169px;
+    border: 0;
+}
+
+/*设置超链接下的所有图片不显示*/
+.play-box a {
+    display: block;
+    /*现在是文本状态，要修改为块状*/
+    overflow: hidden;
+    /*隐藏超过边框高度的图片*/
+    opacity: 0;
+    /*默认图片为全透明*/
+    height: 0;
+    /*默认高度为0*/
+    transition: opacity .5s;
+    /*默认透明度过渡时间为0.5s*/
+}
+
+/*设置当前图片显示*/
+#imgList a.current {
+    opacity: 1;
+    /*默认图片显示*/
+    height: auto;
+    /*默认高度为自动*/
+}
+
+/*设置列表ul*/
+.play-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*设置列表ul下的li*/
+.play-box ul li {
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    font-size: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    float: left;
+}
+
+/*设置图标绝对定位*/
+.iconList {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -45px;
+}
+
+/*设置向左向右图标*/
+.sliderbar {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    font-family: simsun;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    background-color: #000;
+    opacity: .6;
+    display: none;
+    cursor: pointer;
+}
+
+/*设置向左图标*/
+.slidebar-left {
+    left: 0;
+}
+
+/*设置向右图标*/
+.slidebar-right {
+    right: 0;
+}

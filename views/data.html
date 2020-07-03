@@ -1,0 +1,102 @@
+<!-- 资料管理页面 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/data.css">
+    <link rel="stylesheet" href="../lib/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="../lib/jQuery.js"></script>
+</head>
+
+<body>
+    <div class="containter">
+        <div class="containter_left">
+            <div class="left_title">
+                Linux实训
+            </div>
+            <div class="logo">
+                <img src="../images/logo.png">
+
+            </div>
+            <ul class="nav">
+                <li>
+                    <a href="../index.html">
+                        <i class="fa fa-home fa-fw"></i>
+                        <p>首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./process.html">
+                        <i class="fa fa-cog fa-fw"></i>
+                        <p>流程管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./data.html">
+                        <i class="fa fa-paperclip"></i>
+                        <p>资料管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./manuscripts.html">
+                        <i class="fa fa-edit"></i>
+                        <p>公文管理</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./organization.html">
+                        <i class="fa fa-user"></i>
+                        <p>组织管理</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="top_nav">
+            <p>社团管理系统<span>计算机181</span></p>
+            <div class="register">
+                <i class="fa fa-user-o"></i>
+                <i class="fa fa-cloud-download"></i>
+                <span class="register_pic">
+                    <img src="../images/left_lunbo1.png" alt="">
+                </span> 
+                <!-- 图片弹窗-->
+                <div id="picPopup" class="model">
+                    <div class="model-content">
+                        <!-- 弹窗内容 -->
+                        <span class="close">&times;</span>
+                        <img src="../images/left_lunbo1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="upload_title">上传文件 uploading
+        </span>
+        <div class="containter_right">
+            
+            <div class="content">
+                <form action="file.php" enctype="multipart/form-data" method="POST">
+                    <label for="filename">文件名: </label>
+                    <input type="text" id="filename" name="filename"><br>
+                    <label for="file">文件: </label>
+                    <input type="file" id="file" name="file"><br>
+                    <label for="upload">上传名: </label>
+                    <input type="text" id="upload" name="uploadname"><br>
+                    <label for="department">所属部门: </label>
+                    <input type="text" id="department" name="department"><br>                    
+                </form>
+                所属年份: <select id="timer"></select>
+                <button>确认</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/registerPic.js"></script>
+    <script src="../js/data_time.js"></script>
+</body>
+
+</html>
