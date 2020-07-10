@@ -2,8 +2,7 @@
 function checkUsername() {
 	var inputOb = document.getElementsByName('username')[0];
 	var v = inputOb.value;
-	var re = /^[A-Z]{1}[a-z]{1,5}$/.test(v);
-	
+	var re = /^[A-Z]{1}[a-z]{1,5}$/.test(v);	
 	if(re) {
 		inputOb.style.color = "palegreen";
 		return true;
@@ -25,6 +24,8 @@ function checkPassword() {
 		return false
 	}
 }
+// 获取头像弹窗
+var imgModal = document.getElementById('mymodalImg');
 // 获取音乐弹窗
 var modal_design = document.getElementById('myModalDesign');
 // 获取帮助弹窗
@@ -38,6 +39,14 @@ var weibo = document.getElementById('weibo');
 // 获取QQ弹窗
 var qq = document.getElementById('qq');
 
+// 获取img的id值
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById('img01');
+// 打开头像弹窗
+img.onclick = function() {
+	imgModal.style.display = "block";
+	modalImg.src = this.src
+}
 //点击音乐按钮,打开弹窗
 function modalDesign() {
 	modal_design.style.display = "block";
@@ -63,6 +72,10 @@ function qQ() {
 	qq.style.display = "block";
 }
 
+//点击(X)按钮,关闭头像弹窗
+function imgClose() {
+	imgModal.style.display = "none";
+}
 //点击(X)按钮,关闭音乐弹窗
 function designClose() {
 	modal_design.style.display = "none";
@@ -90,7 +103,10 @@ function qqClose() {
 
 // 在用户点击其他地方时，关闭弹窗
 window.onclick = function(event) {
-	if (event.target == modal_design) {  //返回触发此事件的元素（事件的目标节点
+	if (event.target == imgModal) {//返回触发此事件的元素（事件的目标节点)
+		imgModal.style.display = "none";
+	}
+	if (event.target == modal_design) {  
 		modal_design.style.display = "none";
 	}
 	if (event.target == modal_help) {

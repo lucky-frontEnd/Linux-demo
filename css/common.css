@@ -66,6 +66,9 @@ body {
 .containter_left .nav>li>a:hover{
     color: #3cb5f5;
 }
+.containter_left .nav>li>a:visited {
+    color: #bdecff;
+}
 /* 左侧导览航设置 结束*/
 
 /* 右侧顶部导航栏样式设置  开始 */

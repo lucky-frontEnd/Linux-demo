@@ -1,19 +1,20 @@
-<!-- 文稿管理页面 -->
+<!-- 公文管理页面 -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>流程管理</title>
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/manuscripts.css">
+    <link rel="stylesheet" href="../css/apply.css">
     <link rel="stylesheet" href="../lib/font-awesome/font-awesome-4.7.0/css/font-awesome.min.css">
     <script src="../lib/jQuery.js"></script>
 </head>
 
 <body>
     <div class="containter">
+        <!-- 左侧导览航 开始 -->
         <div class="containter_left">
             <div class="left_title">
                 Linux实训
@@ -24,7 +25,7 @@
             </div>
             <ul class="nav">
                 <li>
-                    <a href="../index.html">
+                    <a href="./index.html">
                         <i class="fa fa-home fa-fw"></i>
                         <p>首页&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     </a>
@@ -42,7 +43,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="./manuscripts.html">
                         <i class="fa fa-edit"></i>
                         <p>公文管理</p>
                     </a>
@@ -55,10 +56,13 @@
                 </li>
             </ul>
         </div>
+        <!-- 左侧导览航 结束 -->
+
+        <!-- 顶部导览航 开始 -->
         <div class="top_nav">
             <p>社团管理系统<span>计算机181</span></p>
             <div class="register">
-                <i class="fa fa-user-o"></i>
+                <i class="fa fa-user-o" id="r_login"></i>
                 <i class="fa fa-cloud-download"></i>
                 <span class="register_pic">
                     <img src="../images/left_lunbo1.png" alt="">
@@ -73,8 +77,30 @@
                 </div>
             </div>
         </div>
+        <!-- 顶部导览航 结束 -->
+
+        <!-- 中间内容标题 -->
+        <div class="content_title">
+            <span>申请书&nbsp;application</span>
+        </div>
+
+        <!-- 中间内容  -->
+        <div class="content"> 
+            <div class="content_main">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    公告主题:&nbsp;<input type="text" id="notice_title" name="notice_title"><br>
+                    发&nbsp;&nbsp;布&nbsp;人:&nbsp;
+                    <input type="text" id="publis_name" name="publis_name"><br>
+                    发布时间:&nbsp;<input type="text" id="public_time" name="public_time"><br>
+                    公告内容:&nbsp;<textarea name="public_content" 
+                    id="public_content"></textarea>
+                </form>
+                <button value="确认">确认</buttonv>
+            </div>
+        </div>
     </div>
 
+    <script src="../js/skip.js"></script>
     <script src="../js/time.js"></script>
     <script src="../js/registerPic.js"></script>
 </body>

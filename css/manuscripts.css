@@ -1,0 +1,9 @@
+/* 文稿管理页面样式设置 */
+.file-admin {
+    float: left;
+    width: 996px;
+    height: 516px;
+    margin-left: 35px;
+    margin-top: 35px;
+    background-color: red;
+}

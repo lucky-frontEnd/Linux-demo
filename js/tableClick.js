@@ -11,7 +11,5 @@ $(function () {
         $('.t_clicks').removeClass('table_current');
         $(this).siblings().removeClass('table_current');
         $(this).toggleClass('table_current');
-    })
-
-    
+    })    
 })

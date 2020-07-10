@@ -1,7 +1,6 @@
-/* 登录页面样式设置 */
 * {
 	padding: 0;
-	margin: 0;
+	margin: 0 auto;
 	box-sizing: border-box;
 }
 body {
@@ -9,6 +8,7 @@ body {
 }
 h1{
 	color: #004d61;
+	width: 960px;
 	margin: 25px 0 2px 35px;
 }
 h4 {
@@ -16,7 +16,7 @@ h4 {
 	color: #aaa;
 }
 .my_img {
-	margin: 10px auto;
+	margin-top: 10px;
 }
 img {
 	display: block;
@@ -45,12 +45,7 @@ img {
 	box-shadow: 0 0 50px rgba(157, 211, 168, 0.2) inset;
 }
 .my_form {
-	margin:40px 0 0 450px;
-}
-p {
-	color: #8ac6d1;
-	font-size: 20px;
-	margin: 5px;
+	margin-top: 50px;
 }
 .my_form input {				
 	width: 370px;
@@ -59,33 +54,38 @@ p {
 	outline: 0;
 	line-height: 45px;
 	border-radius: 11px;
+	padding-top: 0;
+	padding-bottom: 0;
 	padding: 16px;
 	font-size: 18px;
 	color: #aaa;
-	box-shadow: 1px 1px #aaa;
+	box-shadow: 2px 2px #aaa;
+	display: block;
+	margin: 0 auto;
+}
+.my_form input:hover {
+	box-shadow: 1px 1px #aaa inset,
+				-1px -1px #fff inset;
 }
 .my_form input:focus {
 	box-shadow: 0 0 8px #8AC6D1 inset;
 }
 #my_btn {
 	width: 200px;
-	margin: 40px 0 10px 550px;
+	margin: 25px auto;
 }
 .myBtn {
 	color: red;
 	width: 60px;
 	height: 50px;
-    outline: none;
-    border: none;
+	outline: none;
 	font-size: 23px;
 	border-radius: 10px;
 	background-color: white;
-    text-align: center;
-    box-shadow: 1px 1px 3px #aaa;
+	text-align: center;
 }
 .my_login {
-	margin: 20px 540px 0;
-	width: 230px;
+	margin: 0 auto;
 }
 .my_login a {
 	display: block;
@@ -135,7 +135,6 @@ input:focus {
 	margin: 30px 0 0 0;
 	right: 100px;
 	outline: none;
-	/* border: 0; */
 	transition: 0.6s ease;
 	border-radius: 5px;
 	background-color: #EBECF0;
@@ -157,6 +156,36 @@ input:focus {
 	background-color: rgb(0,0,0); 
 	background-color: rgba(0,0,0,0.4); 
 }
+
+/* 头像弹窗内容 */
+ .img-content {
+	 margin: auto;
+	 display: block;
+	 width: 80%;
+	 height: 100%;
+	 max-width: 700px;
+ }
+ /* 添加动画 */
+ .img-content {
+	 -webkit-animation-name: zoom;
+	 -webkit-animation-duration: 0.6s;
+	 animation-name: zoom;
+	 animation-duration: 0.6s;
+ }
+@-webkit-keyframes zoom{
+ 	from{-webkit-transform: scale(0);}
+ 	to{-webkit-transform: scale(1);}
+ }
+ @keyframes zoom{
+ 	from{transform: scale(0);}
+ 	to{transform: scale(1);}
+ }
+ /* 小屏幕中图片宽度为100% */
+ @media only screen and (max-width: 700px) {
+	 .img-content {
+		 width: 100%;
+	 }
+ }
  
 /* 弹窗内容 */
 .modal-content {
